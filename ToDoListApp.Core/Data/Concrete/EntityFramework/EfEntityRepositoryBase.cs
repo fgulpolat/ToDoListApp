@@ -43,7 +43,7 @@ namespace ToDoListApp.Core.Data.Concrete.EntityFramework
             }
         }
 
-        public IEnumerable<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate)
+        public IList<TEntity> GetAll(Expression<Func<TEntity, bool>> predicate)
         {
             using (var context = new TContext())
             {

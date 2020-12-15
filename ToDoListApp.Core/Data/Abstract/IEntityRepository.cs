@@ -11,7 +11,7 @@ namespace ToDoListApp.Core.Data.Abstract
 {
    public interface IEntityRepository<T> where T:class,IEntity,new()
     {
-        IEnumerable<T> GetAll(Expression<Func<T, bool>> predicate);
+        IList<T> GetAll(Expression<Func<T, bool>> predicate);
         T Get(Expression<Func<T, bool>> predicate);
         T GetById(int id);
         T Add(T entity);

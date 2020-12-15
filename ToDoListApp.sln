@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp", "ToDoListApp\ToDoListApp.csproj", "{D4F09808-7046-4D9A-8F62-58F7A8FD470D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp.UI", "ToDoListApp\ToDoListApp.UI.csproj", "{D4F09808-7046-4D9A-8F62-58F7A8FD470D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp.Core", "ToDoListApp.Core\ToDoListApp.Core.csproj", "{6F8BD834-BED3-4F39-93BD-3F2D75A3E666}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp.Entities", "ToDoListApp.Entities\ToDoListApp.Entities.csproj", "{EBD69815-091B-4390-8855-F81001342A4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListApp.Data", "ToDoListApp.Data\ToDoListApp.Data.csproj", "{B45ED9B6-7A50-452C-A2ED-A142E15F0EC9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{6F8BD834-BED3-4F39-93BD-3F2D75A3E666}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F8BD834-BED3-4F39-93BD-3F2D75A3E666}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F8BD834-BED3-4F39-93BD-3F2D75A3E666}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD69815-091B-4390-8855-F81001342A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD69815-091B-4390-8855-F81001342A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD69815-091B-4390-8855-F81001342A4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD69815-091B-4390-8855-F81001342A4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B45ED9B6-7A50-452C-A2ED-A142E15F0EC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B45ED9B6-7A50-452C-A2ED-A142E15F0EC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B45ED9B6-7A50-452C-A2ED-A142E15F0EC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B45ED9B6-7A50-452C-A2ED-A142E15F0EC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

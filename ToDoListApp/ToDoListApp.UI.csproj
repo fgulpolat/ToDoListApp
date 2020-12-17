@@ -46,6 +46,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Ninject, Version=3.3.4.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.3.4\lib\net45\Ninject.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -124,6 +127,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ToDoListViewModel.cs" />
+    <Compile Include="NinjectController\NinjectControllerFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -159,13 +164,11 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -179,6 +182,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{481D2E1F-0618-455B-8ADE-F545CA2920A5}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDoListApp.Core\ToDoListApp.Core.csproj">
+      <Project>{6F8BD834-BED3-4F39-93BD-3F2D75A3E666}</Project>
+      <Name>ToDoListApp.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDoListApp.Data\ToDoListApp.Data.csproj">
+      <Project>{B45ED9B6-7A50-452C-A2ED-A142E15F0EC9}</Project>
+      <Name>ToDoListApp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ToDoListApp.Entities\ToDoListApp.Entities.csproj">
+      <Project>{EBD69815-091B-4390-8855-F81001342A4B}</Project>
+      <Name>ToDoListApp.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

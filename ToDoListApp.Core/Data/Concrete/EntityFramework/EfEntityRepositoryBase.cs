@@ -47,9 +47,17 @@ namespace ToDoListApp.Core.Data.Concrete.EntityFramework
         {
             using (var context = new TContext())
             {
-                return predicate == null
-                    ? context.Set<TEntity>().ToList()
-                    : context.Set<TEntity>().Where(predicate).ToList();
+                if (predicate==null)
+                {
+                    return context.Set<TEntity>().ToList();
+                }
+                else
+                {
+                   return context.Set<TEntity>().Where(predicate).ToList();
+                }
+                //return predicate == null
+                //    ? context.Set<TEntity>().ToList()
+                //    : context.Set<TEntity>().Where(predicate).ToList();
             }
         }
 

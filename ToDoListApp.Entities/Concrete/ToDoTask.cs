@@ -11,10 +11,10 @@ namespace ToDoListApp.Entities.Concrete
     {
         public int Id { get; set; }
         public string Content { get; set; }
-        public DateTime StartingDate { get; set; }
-        public DateTime DueDate { get; set; }
+        public DateTime? StartingDate { get; set; }
+        public DateTime? DueDate { get; set; }
         public DateTime? ComplationDate { get; set; }
-        public DateTime CreationDate { get; set; }
+        public DateTime? CreationDate { get; set; }
         public bool IsDone { get; set; }
         public bool IsDeleted { get; set; }
     }

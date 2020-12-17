@@ -33,7 +33,7 @@ namespace Business.Concrete
             return _taskDal.Get(x => x.Id == id);
         }
 
-        public IList<ToDoTask> GetTasks()
+        public IList<ToDoTask> GetAll()
         {
             return _taskDal.GetAll(x=>x.IsDeleted!=true);
         }

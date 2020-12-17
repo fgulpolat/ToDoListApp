@@ -9,7 +9,7 @@ namespace Business.Abstract
 {
    public interface ITaskService
     {
-        IList<ToDoTask> GetTasks();
+        IList<ToDoTask> GetAll();
         ToDoTask Get(int id);
         ToDoTask Add(ToDoTask task);
         ToDoTask Update(ToDoTask task);
